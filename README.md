@@ -13,6 +13,7 @@ nvim-telescope/telescope.nvim
 nvim-telescope/telescope-ui-select.nvim
 folke/tokyonight.nvim
 nvim-treesitter/nvim-treesitter
+lukas-reineke/indent-blankline.nvim
 ```
 
 ## Keybinds
