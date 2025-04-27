@@ -14,3 +14,33 @@ nvim-telescope/telescope-ui-select.nvim
 folke/tokyonight.nvim
 nvim-treesitter/nvim-treesitter
 ```
+
+## Keybinds
+### LSP
+```
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
+vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})
+vim.keymap.set('n', '<leader>gr', vim.lsp.buf.references, {})
+vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
+```
+### None-LS
+```
+vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+```
+### Telescope
+```
+vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+```
+### Completions
+```
+["<C-b>"] = cmp.mapping.scroll_docs(-4),
+["<C-f>"] = cmp.mapping.scroll_docs(4),
+["<C-Space>"] = cmp.mapping.complete(),
+["<C-e>"] = cmp.mapping.abort(),
+["<CR>"] = cmp.mapping.confirm({ select = true }),
+```
+### Neotree
+```
+vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>')
+```
