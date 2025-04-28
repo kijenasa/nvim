@@ -3,8 +3,10 @@ return {
         "lukas-reineke/indent-blankline.nvim",
         opts = {
             indent = {
-                char = "-",
+                char = "│",
+                tab_char = "│",
             },
+            scope = { show_start = false, show_end = false },
         },
         main = "ibl",
         setup = function(_, opts)
