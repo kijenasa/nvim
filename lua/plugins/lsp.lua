@@ -10,7 +10,7 @@ return {
         config = function()
             require("mason-lspconfig").setup({
                 -- Dont forget to add servers to nvim-lspconfig as well
-                ensure_installed = {
+               mensure_installed = {
                     "lua_ls",        -- Lua
                     "asm_lsp",       -- Asm
                     "clangd",        -- C

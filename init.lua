@@ -1,8 +1,11 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=4")
-vim.cmd("set softtabstop=4")
-vim.cmd("set shiftwidth=4")
-vim.cmd("set relativenumber")
-vim.g.maplead = ' '
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+
+vim.opt.number = true
+vim.opt.relativenumber = true
+
+vim.g.maplead = " "
 
 require("config.lazy")
