@@ -8,4 +8,6 @@ vim.opt.relativenumber = true
 
 vim.g.maplead = " "
 
+vim.opt.clipboard = "unnamedplus"
+
 require("config.lazy")
