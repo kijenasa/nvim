@@ -14,6 +14,7 @@ nvim-telescope/telescope-ui-select.nvim
 folke/tokyonight.nvim
 nvim-treesitter/nvim-treesitter
 lukas-reineke/indent-blankline.nvim
+rmagatti/goto-preview
 ```
 
 ## Keybinds
@@ -45,4 +46,9 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 ### Neotree
 ```
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>')
+```
+### goto-preview
+```
+vim.keymap.set("n", "gp", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>")
+vim.keymap.set("n", "gP", "<cmd>lua require('goto-preview').close_all_win()<CR>")
 ```
