@@ -15,6 +15,7 @@ folke/tokyonight.nvim
 nvim-treesitter/nvim-treesitter
 lukas-reineke/indent-blankline.nvim
 rmagatti/goto-preview
+nvim-lualine/lualine.nvim
 ```
 
 ## Keybinds
